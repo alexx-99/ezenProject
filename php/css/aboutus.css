@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+.au-bn-bg {background:url(../images/aboutus/bn1.jpg) no-repeat; background-size:cover; font-size:10px;}
+h3 {text-transform:capitalize;}
+h5 {font-family:"courgette";  text-transform:capitalize;}
+
+.au-mt-txt{background:url(../images/aboutus/mt-txt.jpg)no-repeat center center; background-size:cover; }
+.au-mt {display:flex; justify-content:space-between; margin-top:60px; cursor:pointer;}
+
+.au-vs {display:flex; justify-content:space-between; padding-top:60px; cursor:pointer;}
+.vs-cover p {position:absolute; left:50%; top:50%; transform: translate(-50%,-50%); font-size:35px; }
+.vs-btn {
+	position:absolute; width:150px; height:40px; left:50%; bottom:5%; font-size: 28px;
+	border:2px solid rgba(255,255,255,0.7); border-radius: 10px;
+	transform: translate(-50%,-50%);
+} 
+
+
+
+
+.au-vs-bg {position:relative; height:100%;}
+.au-vs-bg1 {background:url(../images/aboutus/au-vs-bg1.jpeg)no-repeat center center; background-size:cover;}
+.au-vs-bg2 {background:url(../images/aboutus/au-vs-bg2.jpeg)no-repeat center center; background-size:cover;}
+.au-vs-bg3 {background:url(../images/aboutus/au-vs-bg3.jpeg)no-repeat center center; background-size:cover;}
+
+
+.au-lt-wrap {
+	display:flex; flex-wrap:wrap; margin-top:90px; justify-content:space-between; opacity:0; transition:all 0.4s ease-in 0.2s;
+	border-radius: 10px;
+}
+
+.tabsBtn {
+	position:absolute; top:20px; width:100px; height:50px;
+	color:#333; text-align:center; line-height:50px; background:#f6f6f6; border-radius:10px;
+	transition:all 0.4s ease-in;
+}
+
+.lt-inner1 {background:url(../images/aboutus/inner1.jpg)no-repeat center center;}
+.lt-inner2 {background:url(../images/aboutus/inner2.jpg)no-repeat center center;}
+.lt-inner3 {background:url(../images/aboutus/inner3.jpg)no-repeat center center;}
+.lt-outer1 {background:url(../images/aboutus/outer1.jpg)no-repeat center center;}
+.lt-outer2 {background:url(../images/aboutus/outer2.jpg)no-repeat center center;}
+.lt-outer3 {background:url(../images/aboutus/outer3.jpg)no-repeat center center;}
+
+
+
+
+@keyframes stroke {
+	0% {stroke-dashoffset:25%; stroke-dasharray:0 50%; fill:rgba(252, 247, 247, 0); stroke:rgba(236, 215, 93, 0.8); stroke-width:2;}
+	50% {fill:rgba(255, 255, 255, 0); stroke:rgba(236, 215, 93, 0.8);}
+	70% {fill:rgba(255, 255, 255, 0); stroke:rgba(104, 173, 226, 0.8);}
+	100% {stroke-dashoffset:-25%; stroke-dasharray:50% 0; fill:rgba(255, 255, 255, 0.8); stroke:rgba(245, 246, 247, 0); stroke-width:2;}
+  }
+
+@media screen and (min-width:1400px) {
+	/*=====  motto =====*/
+	.au-mt-bg {
+		width:700px; height:400px;
+		background:url(../images/aboutus/mt-bn.jpeg); background-size:cover; border-radius:10px;
+		box-shadow:0 0 10px rgba(255, 255, 255, 0.3) inset, 0 0 0 10px rgba(35, 70, 125, 0.4) inset;
+		transition: all 0.4s ease-in;
+	}
+	.au-mt-bg:hover{box-shadow:0 0 50px rgba(255,255,255,0.2) inset, 0 0 0 400px rgba(132, 132, 133, 0.3) inset;}
+
+	.au-mt-txt {
+		width:520px; height:400px; padding:170px 10px;
+		text-align:center; 
+		box-shadow:0 0 50px rgba(255,255,255,0.2) inset, 0 0 200px rgba(132, 132, 133, 0.3) inset;
+		transition:all 0.4s ease-in; border-radius:10px;
+	}
+	
+	.au-mt-txt > h5, .au-mt-txt > p {width:300px; margin:0 auto; transition:all 0.4s ease-in 0.3s;}
+	.au-mt-txt > h5 {font-size:42px; ; opacity:1;}
+	.au-mt-txt > p {padding:10px 10px; font-size:18px; opacity:0;}
+	
+	.au-mt-txt:hover {padding:120px 10px;}
+	.au-mt-txt:hover p {opacity: 1;}
+	.au-mt-bg:hover {box-shadow:0 0 50px rgba(255,255,255,0.2) inset, 0 0 0 400px rgba(132, 132, 133, 0.3) inset;}
+	.au-mt-txt:hover {box-shadow:0 0 20px rgba(255,255,255,0.5) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;}
+	/*=====  vision=====*/
+
+	
+	.au-vs > li {width:380px; height:500px; color:#f9f9f9; text-align:center; border-radius: 10px; overflow:hidden;}
+	.vs-cover{
+		height:100%; padding-top:250px;
+		font-family:"courgette"; font-size:35px; box-sizing: border-box;
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition:all 0.4s ease-in;
+	}
+	.au-vs-txt {
+		position:absolute; height:100%; top:0; padding:150px 50px; background:#333;
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition: all 0.5s ease-in; opacity:0; 
+	}
+	.au-vs-txt h4 {font-size:24px;}
+	.au-vs-txt p {padding-top:20px; line-height:30px;}
+	.au-vs-bg:hover .au-vs-txt{
+		position:absolute; top:0; padding:200px 50px;
+		background:rgba(15, 15, 15, 0.6); opacity:1;
+	}
+	.au-vs-bg:hover .vs-cover{opacity:0;}
+
+	/*=====location=====*/
+	.au-lt-container{position:relative; height:1100px;}
+	.tabsBtn.one {left:460px;}
+	.tabsBtn.second {left:600px;}
+	.tabsBtn.third {left:740px;}
+	.tabsBtn.on, .tabsBtn:hover {color:#f6f6f6; background:rgba(207, 46, 46, 0.4);}
+	.au-lt-wrap.on {left:0; opacity:1; z-index:3;}
+	.first {position:absolute;}
+	.two {position:absolute; opacity:0; z-index:2;}
+	.three {position:absolute; opacity:0; z-index:1;}
+	
+	.au-lt-wrap .au-lt-bg {
+		position:relative; width:610px; height:480px; background-size:cover;
+		text-align:center; cursor:pointer; border-radius:10px; 
+	}
+	
+	.au-lt-bg svg {position:absolute; left:0; top:0;  opacity:1; transition:all 0.4s ease-in;}
+	.au-lt-bg:hover svg{box-shadow:0 0 0 300px rgba(15, 15, 15, 0.2) inset, 0 0 0 250px rgba(69, 69, 70, 0.2) inset; border-radius: 10px;}
+	.au-lt-bg svg line {fill:none; stroke:rgba(255, 255, 255, 0.5); stroke-width:8; transition:all 0.3s ease-in;}
+	.au-lt-bg svg line.top, .bottom {stroke-dasharray:630 540;}
+	.au-lt-bg svg line.left, .right {stroke-dasharray:600 420;}
+	
+	.au-lt-bg:hover svg line.top {transform:translateY(430px);}
+	.au-lt-bg:hover svg line.bottom {transform:translateY(-100px);}
+	.au-lt-bg:hover svg line.left {transform:translateX(260px);}
+	.au-lt-bg:hover svg line.right {transform:translateX(-550px);}
+	.au-lt-bg:hover svg {opacity:1;}
+	
+	.au-lt-txt .au-lt-svg {
+		left:60px; top:380px; width:200px; height:50px; transition:all 0.4s ease-in; font-weight:350; 
+		fill:rgba(255, 255, 255, 1);
+		box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5) inset, 0 0 5px 5px rgba(25, 25, 26, 0.3) inset;
+		border-radius: 10px;
+	}
+	.au-lt-bg:hover .au-lt-svg {
+		text-align:center; animation:stroke 2s 1 alternate; fill:rgba(255, 255, 255, 1);
+		box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5) inset, 0 0 10px 50px rgba(25, 25, 26, 0.3) inset;
+	}
+	
+	.map {width:1300px; height:500px; margin:60px auto; border-radius:10px;}
+}
+
+
+/* ========== 미디어 쿼리 HD 영역 ========== */
+@media screen and (min-width:1050px) and (max-width:1399px) {
+		/*=====  motto =====*/
+		
+	.au-mt-bg {
+		width:475px; height:350px;
+		background:url(../images/aboutus/mt-bn.jpeg); background-size:cover; border-radius:10px;
+		box-shadow:0 0 10px rgba(255, 255, 255, 0.3) inset, 0 0 0 10px rgba(35, 70, 125, 0.4) inset;
+		transition: all 0.4s ease-in;
+	}
+	.au-mt-bg:hover{box-shadow:0 0 50px rgba(255,255,255,0.2) inset, 0 0 0 400px rgba(132, 132, 133, 0.3) inset;}
+	.au-mt-txt:hover {box-shadow:0 0 20px rgba(255,255,255,0.5) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;}
+	.au-mt-txt {
+		width:475px; height:350px;
+		text-align:center; box-shadow:0 0 50px rgba(255,255,255,0.2) inset, 0 0 200px rgba(132, 132, 133, 0.3) inset;
+		transition:all 0.4s ease-in;  border-radius:10px;
+	}
+	
+	.au-mt-txt > h5, .au-mt-txt > p {width:250px; margin:0 auto; transition:all 0.4s ease-in 0.3s; opacity:1;}
+	.au-mt-txt > h5 {padding-top:110px; font-size:35px; font-family:"courgette"; text-transform:capitalize; opacity:1;}
+	.au-mt-txt > p {padding-top:10px; opacity:1;}
+
+	/*=====  vision=====*/
+	
+	
+	.au-vs > li {width:300px; height:350px; color:#f9f9f9; text-align:center; border-radius: 10px; overflow:hidden;}
+	.au-vs-bg {position:relative; height:100%;}
+	.vs-cover{
+		
+		height:100%; padding-top:160px;
+		font-family:"courgette"; font-size:30px; box-sizing: border-box;
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition:all 0.4s ease-in;
+	}
+	
+	.vs-cover p {position:absolute; left:50%; top:50%; transform: translate(-50%,-50%); font-size:25px; }
+	.vs-btn {
+	position:absolute; width:120px; height:30px; left:50%; bottom:5%; font-size: 20px;
+	border:2px solid rgba(255,255,255,0.7); border-radius: 10px;
+	transform: translate(-50%,-50%);
+} 
+	.au-vs-txt {
+		position:absolute; height:100%; top:0; padding:140px 40px; 
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition: all 0.5s ease-in; opacity:0; 
+	}
+
+	.au-vs-txt h4 {font-size:22px;}
+	.au-vs-txt p {padding-top:10px; line-height:20px;}
+	.au-vs-bg:hover .au-vs-txt{
+		position:absolute; top:0; padding:140px 40px;
+		background:rgba(15, 15, 15, 0.6); opacity:1;
+	}
+	.au-vs-bg:hover .vs-cover{opacity:0;}
+
+	/*=====location=====*/
+	.au-lt-container{position:relative;  height:900px;}
+	.tabsBtn.one {left:320px;}
+	.tabsBtn.second {left:450px;}
+	.tabsBtn.third {left:580px;}
+	.tabsBtn.on, .tabsBtn:hover {color:#f6f6f6; background:rgba(207, 46, 46, 0.4);}
+	.au-lt-wrap.on {left:0; opacity:1; z-index:3;}
+	.first {position:absolute;}
+	.two {position:absolute; opacity:0; z-index:2;}
+	.three {position:absolute; opacity:0; z-index:1;}
+	
+	.au-lt-wrap .au-lt-bg {
+		position:relative; width:475px; height:400px; background-size:cover; 
+		box-shadow: 0 0 300px rgba(59, 59, 59, 0.5) inset, 0 0 300px rgba(32, 32, 32, 0.5) inset;
+		text-align:center; cursor:pointer; border-radius:10px; 
+	}
+
+	.au-lt-txt .au-lt-svg {
+		position: absolute; left:35%; top:50%; width:150px; height:50px; 
+		text-align:center; animation:stroke 2s 1 alternate;
+		box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5) inset, 0 0 2px 2px rgba(25, 25, 26, 0.5) inset;
+		transition:all 0.4s ease-in; font-weight:550; fill:rgba(255, 255, 255, 1); opacity: 1; border-radius:10px;
+	}
+	.map {width:100%; height:400px; margin:60px auto; border-radius:10px;}
+}
+
+
+
+/* ========== 미디어 쿼리 Tablet 영역 ========== */
+@media screen and (min-width:760px) and (max-width:1049px){
+	/*=====  motto =====*/
+	
+	.au-mt-bg {
+		width:350px; height:250px;
+		background:url(../images/aboutus/mt-bn.jpeg); background-size:cover; border-radius:10px;
+		box-shadow:0 0 10px rgba(255, 255, 255, 0.3) inset, 0 0 0 10px rgba(35, 70, 125, 0.4) inset;
+		transition: all 0.4s ease-in;
+	}
+	.au-mt-bg:hover{box-shadow:0 0 50px rgba(255,255,255,0.2) inset, 0 0 0 400px rgba(132, 132, 133, 0.3) inset;}
+	.au-mt-txt {
+		width:350px; height:250px;
+		text-align:center; box-shadow:0 0 40px rgba(255,255,255,0.4) inset, 0 0 0 300px rgba(35, 70, 125, 0.5) inset;
+		transition:all 0.4s ease-in; border-radius:10px;
+	}
+	
+	.au-mt-txt > h5, .au-mt-txt > p {width:250px; margin:0 auto; transition:all 0.4s ease-in 0.3s; opacity: 1;}
+	.au-mt-txt > h5 {padding-top:60px; font-size:30px; font-family:"courgette"; text-transform:capitalize;}
+	.au-mt-txt > p {padding:10px 25px; font-family:"courgette"; font-size:15px;}
+	
+	
+	/*=====  vision=====*/
+	
+	.au-vs > li {width:350px; height:250px; color:#f9f9f9; text-align:center; border-radius: 10px; overflow:hidden;}
+	.au-vs > li:last-child{display:none;}
+	.au-vs-bg {position:relative; height:100%;}
+	.vs-cover{
+		display:none;
+		height:100%; padding-top:115px;
+		font-family:"courgette"; font-size:30px; box-sizing: border-box;
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition:all 0.4s ease-in;
+	}
+
+	.au-vs-txt {
+		position:absolute; height:100%; top:0; padding:100px 50px; 
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition: all 0.5s ease-in; opacity:1; 
+	}
+
+	.au-vs-txt h4 {font-size:20px;}
+	.au-vs-txt p {font-size:15px; padding-top:10px; line-height:20px;}
+
+	.au-vs-bg:hover .vs-cover{opacity:0;}
+
+	/*=====location=====*/
+	.au-lt-container{position:relative; height:900px;}
+
+	.tabsBtn.one {left:160px;}
+	.tabsBtn.second {left:320px;}
+	.tabsBtn.third {left:480px;}
+	.tabsBtn.on, .tabsBtn:hover {color:#f6f6f6; background:rgba(207, 46, 46, 0.4);}
+	.au-lt-wrap.on {left:0; opacity:1; z-index:3;}
+	.first {position:absolute;}
+	.two {position:absolute; opacity:0; z-index:2;}
+	.three {position:absolute; opacity:0; z-index:1;}
+	
+	.au-lt-wrap .au-lt-bg {
+		position:relative; width:350px; height:350px; background-size:cover; 
+		box-shadow: 0 0 300px rgba(59, 59, 59, 0.5) inset, 0 0 300px rgba(32, 32, 32, 0.5) inset;
+		text-align:center; cursor:pointer; border-radius:10px; 
+	}
+	
+	.au-lt-txt .au-lt-svg {
+		position: absolute; left:30%; top:47%; width:150px; height:50px; 
+		text-align:center; 
+		opacity: 1; border-radius:10px;
+	}
+
+	.map {width:100%; height:400px; margin:60px auto; border-radius:10px;}
+}
+
+@media screen and (max-width:759px){
+	/*=====  motto =====*/
+	h3{margin-top:-30px;}
+	.au-mt {margin-top:30px;}
+	
+	.au-mt-bg {
+		display:none;
+		width:350px; height:250px; 
+		background:url(../images/aboutus/mt-bn.jpeg); background-size:cover; border-radius:10px;
+		box-shadow:0 0 10px rgba(255, 255, 255, 0.3) inset, 0 0 0 10px rgba(35, 70, 125, 0.4) inset;
+		transition: all 0.4s ease-in;
+	}
+	.au-mt-bg:hover{box-shadow:0 0 50px rgba(255,255,255,0.2) inset, 0 0 0 400px rgba(132, 132, 133, 0.3) inset;}
+
+	.au-mt-txt {
+		width:350px; height:250px; margin:0 auto; 
+		text-align:center; box-shadow:0 0 40px rgba(255,255,255,0.4) inset, 0 0 0 300px rgba(35, 70, 125, 0.5) inset;
+		transition:all 0.4s ease-in; border-radius:10px;
+	}
+	.au-mt-txt{background:url(../images/aboutus/mt-txt.jpg)no-repeat center center; background-size:cover; }
+	.mt-view {display:none;  font-size:40px; color:#e4e6a8; opacity:0.8; transition:all 0.3s ease-in 0.2s;}
+	
+	.au-mt-txt > h5, .au-mt-txt > p {width:250px; margin:0 auto; transition:all 0.4s ease-in 0.3s; opacity: 1;}
+	.au-mt-txt > h5 {padding-top:60px; font-size:30px; font-family:"courgette"; text-transform:capitalize;}
+	.au-mt-txt > p {padding:10px 25px; font-family:"courgette"; font-size:15px;}
+	
+	
+	/*=====  vision=====*/
+	.au-vs {display:flex; justify-content:space-between; padding-top:30px; cursor:pointer;}
+	
+	.au-vs > li {width:350px; height:250px; margin:0 auto; color:#f9f9f9; text-align:center; border-radius: 10px; overflow:hidden;}
+	.au-vs > li:nth-child(2){display:none;}
+	.au-vs > li:last-child{display:none;}
+	.au-vs-bg {position:relative; height:100%;}
+	.vs-cover{
+		display:none;
+		height:100%; padding-top:115px;
+		font-family:"courgette"; font-size:30px; box-sizing: border-box;
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition:all 0.4s ease-in;
+	}
+	.au-vs-txt {
+		position:absolute; height:100%; top:0; padding:100px 50px; 
+		box-shadow:0 0 10px rgba(20, 20, 20, 0.7) inset, 0 0 0 200px rgba(50, 51, 53, 0.4) inset;
+		transition: all 0.5s ease-in; opacity:1; 
+	}
+
+	.au-vs-txt h4 {font-size:20px;}
+	.au-vs-txt p {font-size:15px; padding-top:10px; line-height:20px;}
+
+	.au-vs-bg:hover .vs-cover{opacity:0;}
+
+	/*=====location=====*/
+	.au-lt-container{position:relative; display:flex; justify-content:center; width:350px;height:1250px; margin:0 auto;}
+	.au-lt-wrap {
+		 flex-wrap:wrap;   opacity:0; transition:all 0.4s ease-in 0.2s;
+		border-radius: 10px;
+	}
+	.tabsBtn {
+		position:absolute; top:10px; width:100px; height:50px;
+		color:#333; text-align:center; line-height:50px; background:#f6f6f6; border-radius:10px;
+		transition:all 0.4s ease-in;
+	}
+	
+	.tabsBtn.one {left:12px;}
+	.tabsBtn.second {left:125px;}
+	.tabsBtn.third {left:238px;}
+	.tabsBtn.on, .tabsBtn:hover {color:#f6f6f6; background:rgba(207, 46, 46, 0.4);}
+	.au-lt-wrap.on {left:0; opacity:1; z-index:3;}
+	.first {position:absolute;}
+	.two {position:absolute; opacity:0; z-index:2;}
+	.three {position:absolute; opacity:0; z-index:1;}
+	
+	.au-lt-wrap .au-lt-bg {
+		position:relative; width:350px; height:350px; margin-bottom: 50px;  background-size:cover; 
+		box-shadow: 0 0 300px rgba(59, 59, 59, 0.5) inset, 0 0 300px rgba(32, 32, 32, 0.5) inset;
+		text-align:center; cursor:pointer; border-radius:10px; 
+	}
+	
+	.au-lt-txt .au-lt-svg {
+		position: absolute; left:30%; top:47%; width:150px; height:50px; 
+		text-align:center; animation:stroke 2s 1 alternate;
+		box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5) inset, 0 0 2px 2px rgba(25, 25, 26, 0.5) inset;
+		transition:all 0.4s ease-in; font-weight:550; fill:rgba(255, 255, 255, 1); opacity: 1; border-radius:10px;
+	}
+
+	.map {width:350px; height:350px; margin:0 auto; border-radius:10px;}
+}

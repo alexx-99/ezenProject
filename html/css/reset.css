@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:courgette; /* 메인타이틀 */
+	src:url('../font/Courgette-Regular.eot');
+	src:url('../font/Courgette-Regular.woff') format('woff');
+}
+@font-face {
+	font-family:pretendard; /* 서브타이틀 */
+	src:url('../font/PretendardVariable.eot');
+	src:url('../font/PretendardVariable.woff') format('woff');
+}
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body {
+	font-family:"pretendard"; font-size:16px; color:#f6f6f6;
+	background:#222;
+}
+h2,h3 {font-family:"courgette"; color:#f6f6f6; font-weight:600;}
+h3 {text-transform:capitalize;}
+h4,h5,h6 {font-family:"pretendard"; color:#f6f6f6; font-weight:600;}
+ul,ol {list-style:none;}
+a {display:block; color:#f6f6f6; text-decoration:none;}
+input,textarea,button,label {display:block; outline:0; background:none; border:0;}
+.txt-y {color:#ecd75d;}
+.txt-b {color:#68ade2;}
+
+.flex-center {display:flex; justify-content:center; align-items:center;}
+.flex-between {display:flex; justify-content:space-between; align-items:center;}
+
+/* ========== input,textarea ========== */
+.inputform {
+	width:100%; padding:10px; 
+	background:#f6f6f6; border-radius:20px;
+}

@@ -1,0 +1,162 @@
+<!-- 페이지 프레픽스: pm -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarNex</title>
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/payment.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="scrollout-splitting/splitting.js"></script>
+    <script src="scrollout-splitting/scroll-out.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+<body>
+	<header>
+		<a href="index.html" class="hd-logo"><img src="../images/top-logo.png" alt="메인로고"></a>
+		<a id="trigger" href="#">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<ul class="top-menu">
+			<li><a href="#"><p>로그인</p><i class="bi bi-person-check-fill"></i></a></li>
+			<li><a href="#"><p>회원가입</p><i class="bi bi-person-plus-fill"></i></a></li>
+		</ul>
+
+		<nav>
+			<div id="menu" class="menu">
+				<div class="search-wrap">
+					<div class="search-box">
+						<input type="search" name="keyword" placeholder="Search..." class="inputform">
+						<button><i class="bi bi-mic-fill"></i></button>
+					</div>
+					<button class="top-btn"><i class="bi bi-search"></i></button>
+				</div>
+				
+				<ul class="menu-list">
+					<li>
+						<a href="#">About Us</a>
+						<ul class="sub-menu">
+							<li><a href="../aboutus.php">C o m p a n y</a></li>
+							<li><a href="../campaign.php">C a m p a i g n</a></li>
+							<li><a href="#">C E O</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">How To Deal</a>
+						<ul class="sub-menu">
+							<li><a href="../deal.php">R e g i s t e r &nbsp;&nbsp;C a r</a></li>
+							<li><a href="#">F o r &nbsp;&nbsp;S a l e</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">How To Pay</a>
+						<ul class="sub-menu">
+							<li><a href="../pay.php">C a r d</a></li>
+							<li><a href="#">C a s h</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Model</a>
+						<ul class="sub-menu">
+							<li><a href="../model.php">M o d e l</a></li>
+							<li><a href="#">D o m e s t i c</a></li>
+							<li><a href="#">I m p o r t e d</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+  <section>
+        <div class="pm-card-info">
+            <h4>Payment</h4>
+            <p>카드사 선택</p>
+            <form action="#" method="post">
+                <div class="pm-bank-btn-wrap">
+                    <div class="pm-bank-btn">
+                        <input type="radio" name="bank" id="bank1" vlaue="국민은행">
+                        <label class="btn btn-check" for="bank1">국민은행</label>
+                    </div>
+                    <div class="pm-bank-btn">
+                        <input type="radio" name="bank" id="bank2" vlaue="신한은행">
+                        <label class="btn btn-check" for="bank2">신한은행</label>
+                    </div>
+                    <div class="pm-bank-btn">
+                        <input type="radio" name="bank" id="bank3" vlaue="우리은행">
+                        <label class="btn btn-check" for="bank3">우리은행</label>
+                    </div>
+                    <div class="pm-bank-btn">
+                        <input type="radio" name="bank" id="bank4" vlaue="현대카드">
+                        <label class="btn btn-check" for="bank4">현대카드</label>
+                    </div>
+                    <div class="pm-bank-btn">
+                        <input type="radio" name="bank" id="bank5" vlaue="삼성카드">
+                        <label class="btn btn-check" for="bank5">삼성카드</label>
+                    </div>
+                    <div class="pm-bank-btn">
+                        <input type="radio" name="bank" id="bank6" vlaue="롯데카드">
+                        <label class="btn btn-check" for="bank6">롯데카드</label>
+                    </div>
+                </div>
+                <ul class="pm-card-info-ul">
+                    <li>
+                        <!-- 이름 -->
+                        <p>Card Holder</p>
+                        <div class="flex-between">
+                            <input type="text" name="surname" class="pm-name form-style" required placeholder="성" z>
+                            <input type="text" name="firstname" class="pm-name form-style" required placeholder="이름">
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 카드 번호 -->
+                        <p>Card Number</p>
+                        <div class="flex-between">
+                            <input type="text" name="digit1" class="digit form-style" required placeholder="1234">
+                            <input type="text" name="digit2" class="digit hidden-digit form-style" required placeholder="****">
+                            <input type="text" name="digit3" class=" digit hidden-digit form-style" required placeholder="****">
+                            <input type="text" name="digit4" class="digit form-style" required placeholder="5678">
+                        </div>
+                    </li>
+                    <li class="flex-between">
+                        <!-- 유효년월 cvc -->
+                        <div>
+                            <p>Expiration Date</p>
+                            <input type="text" name="exp_date" class="digit form-style" required placeholder="YY/MM">
+                        </div>
+                        <div>
+                            <p>CVC</p>
+                            <input type="text" name="cvc" class="digit form-style" required placeholder="XXX">
+                        </div>
+                        <button type="submit" class="btn btn-carnex">결제</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+  </section>
+  <footer>
+    <div class="ft-wrap">
+      <a href="index.html"><img src="../images/bottom-logo.png" alt="하단로고"></a>
+      
+      <div class="ft-txt">
+        <p>(주)카넥스</p>
+        <p>Addr : 197road, 12, WorldcupSagang-ro, Seo-gu, Gwangju, Korea | 사업자등록번호 : 123-45-67890 | 통신판매업신고번호 : 2020-광주북구-0408</p>
+      </div>
+      
+      <ul class="sns">
+        <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+        <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
